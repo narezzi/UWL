@@ -1,0 +1,31 @@
+The original instructions (http://www.cis.syr.edu/~wedu/seed/Labs_12.04/Networking/Firewall_VPN/)
+
+simpletun there is a issue on the bufferoverflow causing the VPN to stop
+Cause the follow error
+
+Writing Data: Error
+
+I've edit the original simpletun.c and the new version should be use in order for the student to be able to complete the lab
+
+Please from your SEED lab;
+1 - if the simpletun exist, remove the simpletun using 
+# rm simpletun
+2 - if the simpletun exist remove the 
+# rm simpletun.c
+3 - Download the new version # wget https://github.com/narezzi/UWL/blob/master/simpletun.c
+4 - run # gcc-o simpletun simpletun.c
+Follow the steps 
+
+*******BEFORE MOVING TO THE step 5 make sure your are a normal user not root any more
+press CTRL+D
+
+5.Using Tunnel: Now we can access 10.0.3.16 from 192.168.10.5 (and similarly access 10.0.3.15 from 192.168.10.6). 
+We can test the tunnel using ping and ssh (note: do not forget to start the ssh server first):
+
+On Machine 192.168.10.5:
+$ ping 10.0.3.16
+$ ssh 10.0.3.16 
+
+On Machine 192.168.10.6:
+$ ping 10.0.3.15
+$ ssh 10.0.3.15
