@@ -16,6 +16,8 @@ Please from your SEED lab;
 4 - run # gcc-o simpletun simpletun.c
 Follow the steps 
 
+ALSO please remember as soon the link is establish in the machine a Machine b open another console to add IP and route information.
+
 *******BEFORE MOVING TO THE step 5 make sure your are a normal user not root any more
 press CTRL+D
 
